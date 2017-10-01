@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dade.Views.DetailPage">
+    <ContentPage.Content>
+        <ScrollView >
+            
+            <StackLayout>
+                <StackLayout HorizontalOptions="Center">
+                    <Image x:Name="OfficialImage" Aspect="AspectFit"/>
+                    <Label x:Name="OfficialName" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label x:Name="OfficialPosition" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <Label x:Name="TermLength" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" />
+                    <Label x:Name="NextElection" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Padding="5,20,5,20">
+                    <Label x:Name="Info" FontSize="Medium"/>
+                </StackLayout>
+            </StackLayout>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

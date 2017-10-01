@@ -13,7 +13,11 @@ namespace Dade
 		{
 			InitializeComponent();
 
-			MainPage = new Dade.MainPage();
+            MainPage = new NavigationPage(new Dade.MainPage())
+            {
+                BarBackgroundColor = Color.LightBlue,
+                BarTextColor = Color.Black
+            };
 		}
 
 		protected override void OnStart ()

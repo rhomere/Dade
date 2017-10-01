@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dade.Views.CityPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+            iOS="0,30,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout>
+                <Image x:Name="MuniImage" Aspect="AspectFill" HeightRequest="170"/>
+                <!--<Label BackgroundColor="LightGray" HeightRequest="170"/>-->
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="Officals" Clicked="Officals_Clicked" 
+                        Text="Officials" FontSize="Large"/>
+            </StackLayout>
+
+            <StackLayout Padding="5">
+                <Label x:Name="Info" FontSize="Medium"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
