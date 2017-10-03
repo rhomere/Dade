@@ -11,10 +11,14 @@
                     <Label x:Name="OfficialName" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
                     <Label x:Name="OfficialPosition" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                     <Label x:Name="TermLength" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" />
+                    <Label x:Name="YearStarted" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center"/>
                     <Label x:Name="NextElection" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center"/>
                 </StackLayout>
                 <StackLayout Padding="5,20,5,20">
+                    <Label Text="Responsibilities:" FontSize="Medium" />
                     <Label x:Name="Info" FontSize="Medium"/>
+                    <StackLayout/>
+                    <Label Text="History:" FontSize="Medium" />
                 </StackLayout>
             </StackLayout>
             

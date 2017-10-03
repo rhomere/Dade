@@ -23,10 +23,21 @@ namespace Dade.Views
             OfficialName.Text = official.Name;
             OfficialPosition.Text = official.Position;
             Info.Text = official.Info;
-            if(official.TermLength != null)
+
+            if (official.TermLength != null)
                 TermLength.Text = "Term Length: " + official.TermLength + " years";
-            if(official.NextElection != null)
+            else
+                TermLength.IsVisible = false;
+
+            if (official.YearStarted != null)
+                YearStarted.Text = "Started: " + official.YearStarted;
+            else
+                YearStarted.IsVisible = false;
+
+            if (official.NextElection != null)
                 NextElection.Text = "Next Election: " + official.NextElection;
+            else
+                NextElection.IsVisible = false;
 		}
 	}
 }

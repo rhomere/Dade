@@ -37,5 +37,8 @@ namespace Dade.Models
         [JsonProperty(PropertyName = "nextElection")]
         public string NextElection { get; set; }
 
+        [JsonProperty(PropertyName = "yearStarted")]
+        public string YearStarted { get; set; }
+
     }
 }

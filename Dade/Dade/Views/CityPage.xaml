@@ -16,7 +16,7 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="Officals" Clicked="Officals_Clicked" 
+                <Button x:Name="Officals" Clicked="Officals_Clicked" HorizontalOptions="FillAndExpand"
                         Text="Officials" FontSize="Large"/>
             </StackLayout>
 
